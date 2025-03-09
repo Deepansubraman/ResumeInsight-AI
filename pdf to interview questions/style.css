@@ -1,0 +1,73 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: url("wp9445160-anime-jungle-wallpapers.jpg") no-repeat center center fixed;
+    background-size: cover;
+    padding: 20px;
+}
+
+/* Container box */
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+/* Headings */
+h2, h3 {
+    color: #333;
+}
+
+/* Form input and button */
+input[type="file"] {
+    padding: 10px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
+    width: 80%;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Results display */
+#keywords, #questions {
+    margin-top: 15px;
+    padding: 10px;
+    font-weight: bold;
+    text-align: left;
+    background: #e9ecef;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+/* Keywords styling */
+#keywords {
+    color: #007bff;
+}
+
+/* Questions styling */
+#questions {
+    color: #28a745;
+    white-space: pre-line;
+}

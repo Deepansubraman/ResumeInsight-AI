@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Upload Your Resume (PDF)</h2>
+        <input type="file" id="fileInput" accept="application/pdf">
+        <button onclick="processResume()">Upload</button>
+        
+        <h3>Detected Keywords:</h3>
+        <div id="keywords"></div>
+
+        <h3>Generated Interview Questions:</h3>
+        <div id="questions"></div>
+    </div>
+
+    <script src="server.js"></script>
+</body>
+</html>
