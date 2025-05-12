@@ -1,6 +1,6 @@
 # ResumeInsight-AI
 Scans resumes for tech keywords
-# 📄🤖 PDF to Interview Question AI (Frontend Only)
+# 📄🤖 PDF to Interview Question AI 
 
 This is a frontend-only web app that extracts text from uploaded PDF files and uses AI (via API) to generate interview-style questions and answers. Built with just **HTML**, **CSS**, and **JavaScript**, the app runs entirely in the browser and connects to AI services like **OpenAI's API** for processing.
 
