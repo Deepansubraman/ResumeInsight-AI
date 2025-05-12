@@ -1,4 +1,3 @@
-// Define technical keywords and related interview questions
 const TECHNICAL_QUESTIONS = {
     "Java": "What are the key features of Java?",
     "Python": "What are Python's advantages over other languages?",
@@ -15,8 +14,6 @@ const TECHNICAL_QUESTIONS = {
     "AI": "What are some real-world applications of AI?",
     "TensorFlow": "What are the advantages of TensorFlow for deep learning?"
 };
-
-// Function to extract text from the uploaded PDF
 function extractTextFromPDF(file) {
     let reader = new FileReader();
     reader.onload = function () {
@@ -45,12 +42,10 @@ function extractTextFromPDF(file) {
     reader.readAsArrayBuffer(file);
 }
 
-// Function to analyze text, extract keywords, and generate questions
 function analyzeText(text) {
     let foundKeywords = [];
     let interviewQuestions = [];
 
-    // Check for keywords in the resume text
     Object.keys(TECHNICAL_QUESTIONS).forEach(keyword => {
         if (text.toLowerCase().includes(keyword.toLowerCase())) {
             foundKeywords.push(keyword);
@@ -58,12 +53,10 @@ function analyzeText(text) {
         }
     });
 
-    // Display extracted keywords and questions
     document.getElementById("keywords").innerHTML = foundKeywords.length ? foundKeywords.join(", ") : "No keywords detected";
     document.getElementById("questions").innerHTML = interviewQuestions.length ? interviewQuestions.join("<br>") : "No questions generated";
 }
 
-// Function to handle file upload and process the resume
 function processResume() {
     let fileInput = document.getElementById("fileInput");
     if (fileInput.files.length === 0) {
